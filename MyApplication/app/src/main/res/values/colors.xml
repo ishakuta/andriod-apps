@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#9CCC65</color>
+    <color name="action_button_color">#EEFF41</color>
+    <color name="final_button_color">#FF8A65</color>
+</resources>
