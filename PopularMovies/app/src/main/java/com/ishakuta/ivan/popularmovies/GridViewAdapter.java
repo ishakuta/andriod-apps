@@ -49,12 +49,11 @@ public class GridViewAdapter extends ArrayAdapter<Movie> {
     @Override
     public View getView(int position, View convertView, ViewGroup viewGroup) {
 
-        ImageView view = (ImageView) convertView;
-        if (view == null) {
-            View rootView = LayoutInflater.from(getContext()).inflate(R.layout.grid_cell, viewGroup, false);
-
-            view = (ImageView)rootView.findViewById(R.id.image_view);
+        if (convertView == null) {
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.grid_cell, viewGroup, false);
         }
+
+        ImageView view = (ImageView) convertView.findViewById(R.id.image_view);;
 
         Movie movie = getItem(position);
 
